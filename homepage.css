@@ -1,0 +1,44 @@
+/* Whole page color and style */
+html{
+   /* background-color: blueviolet;  */
+    background-image: linear-gradient(to bottom right, #e133ea, #3361ea);
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   /* background-image: linear-gradient(to bottom right, red, blue); */
+
+}
+
+#PageAuthor{
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    text-shadow: 
+        2px 2px 0 black, 
+        -2px 2px 0 black, 
+        2px -2px 0 black, 
+        -2px -2px 0 black;
+}
+
+#AuthorContainer{
+    background-color: rgba(127, 255, 212, 0.226);
+}
+
+#SocialButtons {
+    background-color: rgba(150, 127, 52, 0.394);
+    display: flex;
+    justify-content:space-between;
+}
+
+#imagebox{
+    padding: 50px;
+}
+
+#SocialButtons > div{
+    background-color: rgba(127, 255, 212, 0.137);
+}
