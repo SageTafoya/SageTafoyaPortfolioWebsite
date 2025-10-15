@@ -2,7 +2,7 @@
 html{
    /* background-color: blueviolet;  */
     background-image: linear-gradient(to bottom right, #e133ea, #3361ea);
-    height: 100%;
+    height: 200%;
 }
 
 body{
@@ -27,18 +27,27 @@ body{
 
 #AuthorContainer{
     background-color: rgba(127, 255, 212, 0.226);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 #SocialButtons {
-    background-color: rgba(150, 127, 52, 0.394);
+    /* background-color: rgba(150, 127, 52, 0.394); */
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 #imagebox{
-    padding: 50px;
+    padding: 5px;
 }
 
 #SocialButtons > div{
     background-color: rgba(127, 255, 212, 0.137);
+    border-radius: 20%;
+    
+}
+
+#SocialButtons > div:hover{
+    background-color: rgba(16, 31, 26, 0.404);
+    
 }
