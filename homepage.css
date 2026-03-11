@@ -2,7 +2,7 @@
 html{
    /* background-color: blueviolet;  */
     background-image: linear-gradient(to bottom right, #e133ea, #3361ea);
-    height: 200%;
+    height: 400%;
 }
 
 body{
@@ -41,6 +41,9 @@ body{
     padding: 5px;
 }
 
+
+
+
 #SocialButtons > div{
     background-color: rgba(127, 255, 212, 0.137);
     border-radius: 20%;
@@ -50,4 +53,31 @@ body{
 #SocialButtons > div:hover{
     background-color: rgba(16, 31, 26, 0.404);
     
+}
+ 
+#Information
+{
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+#Document{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#resume{
+    border: solid 9px rgb(150, 150, 150);
+    border-radius: 5%;
+    
+}
+
+#resume:hover{
+    color:black;
+    border: solid 9px rgb(94, 94, 94);
+
 }

@@ -10,6 +10,8 @@
 
 </head>
 
+
+
 <body>
     
     <div id="AuthorContainer">
@@ -17,13 +19,19 @@
     </div>
 
     <div id="SocialButtons">
-        <div id="imagebox"> <a href="https://github.com/SageTafoya"><img src="images/UniformGihubLogo.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
-        <div id="imagebox"> <a href="https://github.com/SageTafoya"><img src="images/EmailTest3.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
-        <div id="imagebox"> <a href="https://github.com/SageTafoya"><img src="images/Linkedin.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
-        <div id="imagebox"> <a href="https://github.com/SageTafoya"><img src="images/Handshakelogo.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
+        <div id="imagebox"> <a target="_blank" href="https://github.com/SageTafoya"><img src="images/UniformGihubLogo.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
+        <div id="imagebox"> <a id="stGmail"  href="tafoyasage+profweb@gmail.com"><img src="images/EmailTest3.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
+        <div id="imagebox"> <a target="_blank" href="https://www.linkedin.com/in/sagetafoya/"><img src="images/Linkedin.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
+        <div id="imagebox"> <a target="_blank"href="https://oregonstate.joinhandshake.com/profiles/nc73vg"><img src="images/Handshakelogo.png" alt="github logo" style="height: 150px; width: 150px;"></a></div>
     </div>
 
-    <div>
+    <div id="Document">
+
+        <h2>View Resume</h2>
+        <a href="documents/Sage_Tafoya_Resume.pdf" download target="_blank"><img id="resume" src="documents/Sage_Tafoya_Resume.png" width="320" height="440"></a>
+    </div>
+
+    <div id="Information">
         <h1>Information</h1>
         <h2>Email: <tb> tafoyasage@gmail.com</h2>
         <h2>Phone: 503-465-7891</h2>
@@ -35,6 +43,38 @@
         <br><br><br><br><br><br><br><br><br><br>
         <h1>Information</h1>
     </div>
+
+    <script>
+
+        const sageEmail = "tafoyasage+profweb@gmail.com";
+        const emailButton = document.getElementById("stGmail");
+        emailButton.addEventListener("click", async (event)=> 
+        {
+        
+            event.preventDefault();
+
+            try
+            {
+
+                await navigator.clipboard.writeText(sageEmail);
+
+                alert("tafoyasage+profweb@gmail.com copied to clipboard!\n\npaste this as email destination");
+            } 
+            catch (error)
+            {
+                alert("failed to copy link to clipboard");
+
+                console.error( "Clipboard Error", error);
+            }
+
+        });
+        // const sageEmail = "tafoyasage+profweb@gmail.com";
+        // navigator.clipboard.writeText(sageEmail)
+        //     .then(() => console.log("Copied "+sageEmail+" to email"))
+        //     .catch(err => console.error("Failed to copy", err));
+
+    </script>
+
 </body>
 
 
