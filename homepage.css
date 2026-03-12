@@ -2,14 +2,14 @@
 html{
    /* background-color: blueviolet;  */
     background-image: linear-gradient(to bottom right, #e133ea, #3361ea);
-    height: 400%;
-}
+    height: 500%;
+}   
 
 body{
     margin: 0;
     padding: 0;
    /* background-image: linear-gradient(to bottom right, red, blue); */
-
+    font-family: sans-serif;
 }
 
 #PageAuthor{
@@ -80,4 +80,32 @@ body{
     color:black;
     border: solid 9px rgb(94, 94, 94);
 
+}
+
+#Information > h1{
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 5px;
+
+    /* text-decoration-thickness: 1px; */
+    /* text-decoration: wavy; */
+}
+
+.figureContainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.figureContainer img{
+    border: solid 9px rgb(255, 255, 255);
+    border-radius: 5px;
+} 
+.figureContainer img:hover{
+    border: solid 9px rgb(149, 149, 149);
+}
+
+figcaption{
+    text-align: center;
 }
