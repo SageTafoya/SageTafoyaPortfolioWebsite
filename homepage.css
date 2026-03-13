@@ -109,3 +109,11 @@ body{
 figcaption{
     text-align: center;
 }
+
+.letterBackground{
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    width: 80%;
+}
